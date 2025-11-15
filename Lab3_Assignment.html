@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration Form</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="Lab3_Assignment.css">
+</head>
+
+<body>
+    <form action="/register" method="POST">
+        <h2>Donor Information</h2> <br> <br> <br> <br>
+
+        <!-- First Name -->
+        <label for="firstname">First Name <span class="required">*</span></label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Last Name <span class="required">*</span></label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender <span class="required">*</span></label>
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" id="others" name="gender" value="Others" required>
+            <label for="others">Others</label>
+        </div><br>
+
+        <!-- DOB -->
+        <label for="dob">Date of Birth <span class="required">*</span></label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Company Name -->
+        <label for="companyname">Company Name <span class="required">*</span></label>
+        <input type="text" id="companyname" name="companyname" required><br><br>
+
+        <!-- Present Address -->
+        <label for="presentaddress">Present Address <span class="required">*</span></label>
+        <input type="text" id="presentaddress" name="presentaddress" required><br><br>
+
+        <!-- Permanent Address -->
+        <label for="permanentaddress">Permanent Address <span class="required">*</span></label>
+        <input type="text" id="permanentaddress" name="permanentaddress" required><br><br>
+
+        <!-- City -->
+        <label for="city_division">City / Division <span class="required">*</span></label>
+        <select id="city_division" name="city_division" required>
+            <option value="">-- Select Division --</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Chattogram">Chattogram</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Sylhet">Sylhet</option>
+        </select><br><br>
+
+        <!-- Zip Code -->
+        <label for="zipcode">Zip Code <span class="required">*</span></label>
+        <input type="number" id="zipcode" name="zipcode" required><br><br>
+
+        <!-- Country -->
+        <label for="country">Country <span class="required">*</span></label>
+        <select id="country" name="country" required>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+        </select><br><br>
+
+        <!-- Phone -->
+        <label for="phone_number">Phone Number <span class="required">*</span></label>
+        <input type="number" id="phone_number" name="phone_number" required><br><br>
+
+        <!-- Fax -->
+        <label for="fax">Fax Number <span class="required">*</span></label>
+        <input type="text" id="fax" name="fax" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Donation -->
+        <label>Donation <span class="required">*</span></label>
+        <div class="donat">
+            <input type="radio" id="none" name="donation_amount" value="None" required>
+            <label for="none">None</label>
+
+            <input type="radio" id="10" name="donation_amount" value="10$" required>
+            <label for="10">10$</label>
+
+            <input type="radio" id="50" name="donation_amount" value="50$" required>
+            <label for="50">50$</label>
+
+            <input type="radio" id="100" name="donation_amount" value="100$" required>
+            <label for="100">100$</label>
+
+            <input type="radio" id="500" name="donation_amount" value="500$" required>
+            <label for="500">500$</label>
+
+            <input type="radio" id="other_amt" name="donation_amount" value="Other" required>
+            <label for="other_amt">Other</label>
+        </div>
+
+        <!-- Custom Amount -->
+        <label for="donation">Other Amount</label>
+        <input type="text" id="donation" name="donation"><br><br>
+
+        <!-- Photo -->
+        <label for="photo">Upload Photo <span class="required">*</span></label>
+        <input type="file" id="photo" name="photo" required><br><br>
+
+        <!-- Feedback -->
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" cols="20" rows="5"></textarea><br><br>
+
+        <!-- Terms -->
+        <label class="terms">
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions.
+            <input type="reset" value="Clear">
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
