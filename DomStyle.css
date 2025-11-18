@@ -1,0 +1,45 @@
+/* Remove default padding from list */
+.student-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Student list items */
+.student-item {
+    margin: 5px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+/* Highlight toggle */
+.highlight {
+    background-color: yellow;
+}
+
+/* Buttons */
+.btn-delete {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-edit {
+    color: blue;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* General button style */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #add8e6;
+}
